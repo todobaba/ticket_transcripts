@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
             font-family: 'Segoe UI', Arial, sans-serif; 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #1a1d24;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -16,54 +16,81 @@
             padding: 20px;
         }
         .container {
-            background: white;
+            background: #2f3136;
             border-radius: 20px;
             padding: 60px 40px;
             max-width: 600px;
             text-align: center;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            border: 1px solid #40444b;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #5865f2;
+            box-shadow: 0 8px 32px rgba(88, 101, 242, 0.4);
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(88, 101, 242, 0.3);
         }
         p {
             font-size: 18px;
-            color: #666;
+            color: #b9bbbe;
             margin-bottom: 30px;
             line-height: 1.6;
         }
-        .emoji {
-            font-size: 80px;
-            margin-bottom: 20px;
-        }
         .info {
-            background: #f8f9fa;
+            background: #202225;
             padding: 20px;
             border-radius: 10px;
             margin-top: 30px;
+            border: 1px solid #40444b;
         }
         .info p {
             font-size: 14px;
-            color: #888;
+            color: #72767d;
             margin: 0;
         }
         code {
-            background: #e9ecef;
-            padding: 2px 8px;
+            background: #40444b;
+            padding: 4px 10px;
             border-radius: 4px;
             font-family: 'Courier New', monospace;
-            color: #495057;
+            color: #00aff4;
+            font-size: 13px;
+        }
+        .badge {
+            display: inline-block;
+            background: #5865f2;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="emoji">🎫</div>
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1319373340959309989/1387087118677049416/Baslksz-1-min.gif?ex=685cb9cb&is=685b684b&hm=83dd4c59ad2a3c5f65dec7aa640ad3e9574be4c708690100cea70f5c39a94ff4&" alt="GNG Logo">
+        </div>
         <h1>GNG Ticket Transcripts</h1>
+        <div class="badge">🎫 Ticket System</div>
         <p>Bu sayfa GNG Discord sunucusunun ticket transcript'lerini barındırır.</p>
         <p>Bir ticket transcript'ini görüntülemek için doğrudan ticket ID'sini içeren URL'yi kullanın.</p>
         <div class="info">
